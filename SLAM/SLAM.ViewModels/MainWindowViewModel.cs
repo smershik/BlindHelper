@@ -105,16 +105,14 @@ namespace SLAM.ViewModels {
             FrontDepthViewportData = new WriteableBitmap(640, 480, 96.0, 96.0, PixelFormats.Bgr32, null);
         }
 
-        private async void UpdateViewports() {
+        private void UpdateViewports() {
 
             ModelReady = model.Ready;
 
             if ((DateTime.Now - lastTimeOfFrameUpdate) >= frameUpdateLimit && ModelReady) {
 
                 model.MoveToPosition(CurrentFrame);
-                MapViewportData = await model.GetActualMapFrameAsync();
-                TopDepthViewportData = model.GetActualTopDepthFrame();
-                byte[] frontViewportPixels = model.GetActualFrontDepthFrame();
+                byte[] frontViewportPixels = model.GetActualFullDepthFrame();
 
                 if (frontViewportPixels != null) {
                     frontDepthViewportData.WritePixels(

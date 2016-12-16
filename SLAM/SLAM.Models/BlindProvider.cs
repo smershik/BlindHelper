@@ -6,12 +6,10 @@ using System.Windows.Media;
 namespace SLAM.Models {
 
     using DataModel.Readers;
-    using MapModel;
 
-    internal sealed class FramesProvider {
+    internal sealed class BlindProvider {
 
         private DataProvider dataProvider;
-        private BaseMapper mapper;
 
         private bool thisInitialized;
 
@@ -21,10 +19,9 @@ namespace SLAM.Models {
 
         private byte[] frontDepthFrameBuffer;
 
-        public FramesProvider(BaseMapper mapper) {
-            this.mapper = mapper;
-            dataProvider = mapper.DataProvider;
-            thisInitialized = false;
+        public BlindProvider(DataProvider dataProvider) {
+            this.dataProvider = dataProvider;
+            //dataProvider.OnNextFrameReady +=
         }
 
         private void Initialize() {
@@ -52,18 +49,6 @@ namespace SLAM.Models {
                 intensity[i] = Color.FromArgb(255, colorComponent, colorComponent, colorComponent);
             }
             
-        }
-
-        internal Point[] GetActualMapFrame() {
-            Initialize();
-            return mapper.ResultMap;
-        }
-
-        internal Point[] GetActualTopDepthFrame() {
-            Initialize();
-            Point[] nextFrameData;
-            dataProvider.GetNextFrameTo(out nextFrameData);
-            return nextFrameData;
         }
 
         internal byte[] GetActualFrontDepthFrame() {

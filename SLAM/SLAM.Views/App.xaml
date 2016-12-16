@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:SLAM.Views"
     xmlns:cv="clr-namespace:SLAM.Views.Converters"
-    xmlns:cc="clr-namespace:SLAM.Views.Controls.Custom"
     xmlns:vm="clr-namespace:SLAM.ViewModels;assembly=SLAM.ViewModels"
     StartupUri="MainWindow.xaml">
     <Application.Resources>
@@ -16,9 +15,6 @@
         <cv:IntToVisibilityConverter x:Key="IntToVisibility"/>
         <cv:IntToVisibilityConverterInverse x:Key="IntToVisibilityInverse"/>
 
-        <cc:MathDataViewport x:Key="MathDataViewport"/>
-
-        <vm:MainWindowViewModel x:Key="MainWindowViewModel"/>
-        
+        <vm:MainWindowViewModel x:Key="MainWindowViewModel"/>        
     </Application.Resources>
 </Application>

@@ -73,16 +73,7 @@
     <Compile Include="DataModel\Writers\BaseWriter.cs" />
     <Compile Include="Events\NextFrameReadyEvent.cs" />
     <Compile Include="Events\ModelUpdatedEvent.cs" />
-    <Compile Include="FramesProvider.cs" />
-    <Compile Include="MapModel\BaseMapper.cs" />
-    <Compile Include="MapModel\MapperResources\LinesBuilder.cs" />
-    <Compile Include="MapModel\ComplexMapper.cs" />
-    <Compile Include="MapModel\BrutforceMapper.cs" />
-    <Compile Include="MapModel\MapperResources\AnglesCalculator.cs" />
-    <Compile Include="MapModel\MapperResources\PointsTransformer.cs" />
-    <Compile Include="MapModel\MapperResources\GradientDescent.cs" />
-    <Compile Include="MapModel\MapperResources\IntersectionsSeeker.cs" />
-    <Compile Include="MapModel\MapperResources\VirtualOdometry.cs" />
+    <Compile Include="BlindProvider.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

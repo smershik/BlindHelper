@@ -1,24 +1,17 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Windows;
-
 
 namespace SLAM.Models {
 
     using Events;
     using DataModel.Readers;
-    using DataModel.Writers;
-    using MapModel;
 
     public class Model : IDisposable {
 
         public event ModelUpdatedEvent OnModelUpdated;
 
         private DataProvider reader;
-        private BaseWriter   writer;
-        private BaseMapper   mapper;
-
-        private FramesProvider framesProvider;
+        private BlindProvider blindProvider;
 
         public string CurrentState { get; private set; } = "Ready";
         public bool Ready { get; private set; } = true;
@@ -40,8 +33,7 @@ namespace SLAM.Models {
         }
 
         private void Initialize() {
-            mapper = new ComplexMapper(reader);
-            framesProvider = new FramesProvider(mapper);
+            blindProvider = new BlindProvider(reader);
         }
 
         private void ChangeState(string newModelState, bool lockModel = false) {
@@ -73,32 +65,12 @@ namespace SLAM.Models {
             reader?.Stop();
         }
 
-        public Point[] GetActualMapFrame() {
-            return framesProvider.GetActualMapFrame();
-        }
-
-        public Task<Point[]> GetActualMapFrameAsync() {
-            Task<Point[]> getActualMapFrame = new Task<Point[]>(() => {
-                ChangeState("Calculate Map", true);
-                Point[] result = framesProvider.GetActualMapFrame();
-                ChangeState("Ready");
-                return result;                
-            });
-            getActualMapFrame.Start();
-            return getActualMapFrame;
-        }
-
-        public Point[] GetActualTopDepthFrame() {
-            return framesProvider.GetActualTopDepthFrame();
-        }
-
-        public byte[] GetActualFrontDepthFrame() {
-            return framesProvider.GetActualFrontDepthFrame();
+        public byte[] GetActualFullDepthFrame() {
+            return blindProvider.GetActualFrontDepthFrame();
         }
 
         public void Dispose() {
             reader?.Dispose();
-
         }
     }
 }
