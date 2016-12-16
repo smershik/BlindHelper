@@ -6,7 +6,7 @@ using System.CodeDom.Compiler;
 using System.Runtime.CompilerServices;
 using System.Diagnostics.CodeAnalysis;
 
-namespace SLAM.Views.Properties {
+namespace BlindHelper.Views.Properties {
 
     [GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [DebuggerNonUserCode()]
@@ -24,7 +24,7 @@ namespace SLAM.Views.Properties {
             get {
                 if ((resourceMan == null)) {
                     ResourceManager temp =
-                        new ResourceManager("SLAM.Views.Properties.Resources", typeof(Resources).Assembly);
+                        new ResourceManager("BlindHelper.Views.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -1,7 +1,9 @@
 ﻿using System;
-using SLAM.Models.DataModel.Adapters;
 
-namespace SLAM.Models.DataModel.Readers {
+
+namespace BlindHelper.Models.DataModel.Readers {
+
+    using Adapters;
 
     internal sealed class KinectDeviceReader : DeviceReader, IDisposable {
 

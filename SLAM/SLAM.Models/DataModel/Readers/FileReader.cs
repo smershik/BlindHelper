@@ -1,9 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SLAM.Models.DataModel.Readers {
-
-    using Adapters;
+namespace BlindHelper.Models.DataModel.Readers {
 
     internal abstract class FileReader : DataProvider, IDisposable {
 

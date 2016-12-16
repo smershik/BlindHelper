@@ -3,11 +3,11 @@ using System.Runtime.InteropServices;
 using System.Windows;
 
 
-[assembly: AssemblyTitle("SLAM.Views")]
+[assembly: AssemblyTitle("BlindHelper.Views")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SLAM.Views")]
+[assembly: AssemblyProduct("BlindHelper.Views")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

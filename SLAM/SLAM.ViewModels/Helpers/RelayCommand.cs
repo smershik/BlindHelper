@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace SLAM.ViewModels.Helpers {
+namespace BlindHelper.ViewModels.Helpers {
 
     public class RelayCommand : ICommand {
 

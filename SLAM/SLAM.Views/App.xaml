@@ -1,10 +1,10 @@
 ﻿<Application
-    x:Class="SLAM.Views.App"
+    x:Class="BlindHelper.Views.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:SLAM.Views"
-    xmlns:cv="clr-namespace:SLAM.Views.Converters"
-    xmlns:vm="clr-namespace:SLAM.ViewModels;assembly=SLAM.ViewModels"
+    xmlns:local="clr-namespace:BlindHelper.Views"
+    xmlns:cv="clr-namespace:BlindHelper.Views.Converters"
+    xmlns:vm="clr-namespace:BlindHelper.ViewModels;assembly=BlindHelper.ViewModels"
     StartupUri="MainWindow.xaml">
     <Application.Resources>
 

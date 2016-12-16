@@ -7,8 +7,8 @@
     <ProjectGuid>{2E2CBEAF-8D2F-464C-81F3-B6C8411EC8D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SLAM.Models</RootNamespace>
-    <AssemblyName>SLAM.Models</AssemblyName>
+    <RootNamespace>BlindHelper.Models</RootNamespace>
+    <AssemblyName>BlindHelper.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -70,7 +70,6 @@
     <Compile Include="DataModel\Readers\FileReader.cs" />
     <Compile Include="DataModel\Readers\KinectDeviceReader.cs" />
     <Compile Include="DataModel\Readers\KinectFileReader.cs" />
-    <Compile Include="DataModel\Writers\BaseWriter.cs" />
     <Compile Include="Events\NextFrameReadyEvent.cs" />
     <Compile Include="Events\ModelUpdatedEvent.cs" />
     <Compile Include="BlindProvider.cs" />

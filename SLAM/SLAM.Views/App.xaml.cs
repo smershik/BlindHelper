@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
 
-namespace SLAM.Views {
+namespace BlindHelper.Views {
     public partial class App : Application { }
 }

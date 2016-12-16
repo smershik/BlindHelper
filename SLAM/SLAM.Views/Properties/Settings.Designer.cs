@@ -3,7 +3,7 @@ using System.CodeDom.Compiler;
 using System.Runtime.CompilerServices;
 
 
-namespace SLAM.Views.Properties {
+namespace BlindHelper.Views.Properties {
 
     [CompilerGenerated()]
     [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]

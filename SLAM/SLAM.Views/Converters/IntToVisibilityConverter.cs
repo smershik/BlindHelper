@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Data;
 
 
-namespace SLAM.Views.Converters {
+namespace BlindHelper.Views.Converters {
 
     public class IntToVisibilityConverter : IValueConverter {
 

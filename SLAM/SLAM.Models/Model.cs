@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace SLAM.Models {
+namespace BlindHelper.Models {
 
     using Events;
     using DataModel.Readers;

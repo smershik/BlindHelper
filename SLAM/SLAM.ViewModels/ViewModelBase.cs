@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 
-namespace SLAM.ViewModels {
+namespace BlindHelper.ViewModels {
 
     public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable {
 

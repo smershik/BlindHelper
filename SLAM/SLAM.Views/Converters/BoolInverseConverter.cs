@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 
 
-namespace SLAM.Views.Converters {
+namespace BlindHelper.Views.Converters {
 
     public class BoolInverseConverter : IValueConverter {
 

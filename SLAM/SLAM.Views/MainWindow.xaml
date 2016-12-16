@@ -1,7 +1,7 @@
-﻿<Window x:Class="SLAM.Views.MainWindow"
+﻿<Window x:Class="BlindHelper.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="SLAM On Kinect Data: Preview Window"
+        Title="BlindHelper: Preview"
         Width="800" Height="700"
         DataContext="{StaticResource MainWindowViewModel}">
     <DockPanel>

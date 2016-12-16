@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 
 
-namespace SLAM.Views {
+namespace BlindHelper.Views {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 
-namespace SLAM.Models.DataModel.Readers {
+namespace BlindHelper.Models.DataModel.Readers {
 
     using Adapters;
 
@@ -37,7 +37,7 @@ namespace SLAM.Models.DataModel.Readers {
             if (reader.Read(rawFrameBuffer, 0, FrameInfo.BytesPerFrame) == FrameInfo.BytesPerFrame) {
                 FrameIndex = frameIndex;
                 HorizontalMirror(rawFrameBuffer);
-                NotifyFrameReady();
+                //NotifyFrameReady();
                 return;
             }
             reader.BaseStream.Position = savedPosition;

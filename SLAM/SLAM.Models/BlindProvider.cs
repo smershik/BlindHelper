@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Media;
 
 
-namespace SLAM.Models {
+namespace BlindHelper.Models {
 
     using DataModel.Readers;
 
@@ -21,7 +21,6 @@ namespace SLAM.Models {
 
         public BlindProvider(DataProvider dataProvider) {
             this.dataProvider = dataProvider;
-            //dataProvider.OnNextFrameReady +=
         }
 
         private void Initialize() {

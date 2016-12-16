@@ -7,10 +7,10 @@ using System.Windows.Media.Imaging;
 using Microsoft.Win32;
 
 
-namespace SLAM.ViewModels {
+namespace BlindHelper.ViewModels {
 
     using Helpers;
-    using Models/*.Old*/;
+    using Models;
 
 
     public class MainWindowViewModel : ViewModelBase {
