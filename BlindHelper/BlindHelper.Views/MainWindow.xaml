@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="BlindHelper: Preview"
-        Width="800" Height="700"
+        Width="800" Height="702"
         DataContext="{StaticResource MainWindowViewModel}">
     <DockPanel>
 

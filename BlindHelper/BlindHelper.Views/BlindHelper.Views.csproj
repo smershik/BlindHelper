@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{49B8B847-C81F-48C6-9168-6C398019CF73}</ProjectGuid>
+    <ProjectGuid>{3C0C9E82-9DB5-4515-81AA-D418E7DCA421}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BlindHelper.Views</RootNamespace>
@@ -121,12 +121,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SLAM.ViewModels\BlindHelper.ViewModels.csproj">
-      <Project>{7ccd7b69-0640-4499-938c-c5c6fcc5c39f}</Project>
+    <ProjectReference Include="..\BlindHelper.ViewModels\BlindHelper.ViewModels.csproj">
+      <Project>{abd597ee-964f-4dbf-8c04-e74a75e7d34a}</Project>
       <Name>BlindHelper.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

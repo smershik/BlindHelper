@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E2CBEAF-8D2F-464C-81F3-B6C8411EC8D2}</ProjectGuid>
+    <ProjectGuid>{0CCB9ABC-7AD9-4546-8A13-7528AC754519}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BlindHelper.Models</RootNamespace>

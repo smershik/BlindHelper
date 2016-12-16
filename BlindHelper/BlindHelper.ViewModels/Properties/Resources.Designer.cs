@@ -24,7 +24,7 @@ namespace BlindHelper.ViewModels.Properties {
             get {
                 if ((resourceMan == null)) {
                     ResourceManager temp =
-                        new ResourceManager("SLAM.ViewModels.Properties.Resources", typeof(Resources).Assembly);
+                        new ResourceManager("BlindHelper.ViewModels.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
