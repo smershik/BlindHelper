@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
+
 namespace BlindHelper.Views.Converters {
 
     public class BoolToVisibilityConverter : IValueConverter {
