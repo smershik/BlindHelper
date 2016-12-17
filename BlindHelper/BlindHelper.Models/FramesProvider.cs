@@ -1,13 +1,11 @@
 ﻿using System.Runtime.CompilerServices;
-using System.Windows;
 using System.Windows.Media;
-
 
 namespace BlindHelper.Models {
 
     using DataModel.Readers;
 
-    internal sealed class BlindProvider {
+    internal sealed class FramesProvider {
 
         private DataProvider dataProvider;
 
@@ -19,7 +17,7 @@ namespace BlindHelper.Models {
 
         private byte[] frontDepthFrameBuffer;
 
-        public BlindProvider(DataProvider dataProvider) {
+        public FramesProvider(DataProvider dataProvider) {
             this.dataProvider = dataProvider;
         }
 

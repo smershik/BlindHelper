@@ -119,6 +119,11 @@ namespace BlindHelper.ViewModels {
                         new Int32Rect(0, 0, 640, 480),
                         frontViewportPixels, frontDepthViewportData.PixelWidth * sizeof(int), 0);
                 }
+
+                // upd speak
+                model.GetActualBarrierRegions();
+                model.Speak();
+
                 lastTimeOfFrameUpdate = DateTime.Now;
             }
         }

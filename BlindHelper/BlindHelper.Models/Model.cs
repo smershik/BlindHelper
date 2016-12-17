@@ -11,7 +11,8 @@ namespace BlindHelper.Models {
         public event ModelUpdatedEvent OnModelUpdated;
 
         private DataProvider reader;
-        private BlindProvider blindProvider;
+        private FramesProvider framesProvider;
+        private BarrierChecker barrierChecker;
 
         public string CurrentState { get; private set; } = "Ready";
         public bool Ready { get; private set; } = true;
@@ -19,7 +20,7 @@ namespace BlindHelper.Models {
 
         public Model(ModelUpdatedEvent onModelUpdated) {
             OnModelUpdated += onModelUpdated;
-            MapperSwitchOffline();
+            MapperSwitchOffline();            
         }
 
         public void MapperSwitchOnline() {
@@ -33,7 +34,8 @@ namespace BlindHelper.Models {
         }
 
         private void Initialize() {
-            blindProvider = new BlindProvider(reader);
+            framesProvider = new FramesProvider(reader);
+            barrierChecker = new BarrierChecker(reader);
         }
 
         private void ChangeState(string newModelState, bool lockModel = false) {
@@ -65,8 +67,16 @@ namespace BlindHelper.Models {
             reader?.Stop();
         }
 
-        public byte[] GetActualFullDepthFrame() {
-            return blindProvider.GetActualFrontDepthFrame();
+        public byte[] GetActualFullDepthFrame() {            
+            return framesProvider.GetActualFrontDepthFrame();
+        }
+
+        public bool[,] GetActualBarrierRegions() {
+            return barrierChecker.Check();
+        }
+
+        public void Speak() {
+            barrierChecker.Speak();
         }
 
         public void Dispose() {
