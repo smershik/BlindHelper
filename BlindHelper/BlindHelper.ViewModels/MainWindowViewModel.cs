@@ -128,7 +128,8 @@ namespace BlindHelper.ViewModels {
                 }
 
                 // upd speak
-                model.GetActualBarrierRegions();
+                BarrierRegions = null;
+                BarrierRegions = model.GetActualBarrierRegions();
                 model.Speak();
 
                 lastTimeOfFrameUpdate = DateTime.Now;

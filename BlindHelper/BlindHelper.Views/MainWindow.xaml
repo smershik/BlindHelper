@@ -78,7 +78,8 @@
                     <Viewbox>
                         <Grid>
                             <Image Source="{Binding FrontDepthViewportData}"/>
-                            <local:RegionsVisualizer/>
+                            <local:RegionsVisualizer
+                                Data="{Binding BarrierRegions, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                         </Grid>
                     </Viewbox>                    
                 </Grid>                
