@@ -21,6 +21,8 @@ namespace BlindHelper.ViewModels {
         private Point[] topDepthViewportData;
         private WriteableBitmap frontDepthViewportData;
 
+        private bool[,] barrierRegions;
+
         private string modelCurrentState;
         private bool modelReady;
         private string currentFilePath;
@@ -47,6 +49,11 @@ namespace BlindHelper.ViewModels {
         public ImageSource FrontDepthViewportData {
             get { return frontDepthViewportData; }
             set { Set(ref frontDepthViewportData, (WriteableBitmap)value); }
+        }
+
+        public bool[,] BarrierRegions {
+            get { return barrierRegions; }
+            set { Set(ref barrierRegions, value); }
         }
 
         public string ModelCurrentState {
